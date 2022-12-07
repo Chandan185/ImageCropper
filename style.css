@@ -1,0 +1,167 @@
+:root{
+  --heart:"m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z";
+}
+body{ 
+  /* height: 100vh; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFCAC8;
+}
+.prev-container{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.prev-container p{
+  font-size: 20px;
+  color: #D2122E;
+  font-weight: 500;
+  margin:auto;
+  margin-bottom: 30px;
+}
+.container{
+  margin: 70px;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#upload-area p{
+  font-size: 20px;
+  color: #D2122E;
+  font-weight: 500;
+}
+.container #upload-area{
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.fa-solid{
+  font-size: 70px;
+  color: rgb(229,43,80);
+}
+.container #upload-btn,.crop-btn,.lnk,.frame-btn{
+  margin: auto;
+ width: 300px;
+ padding: 20px;
+ border-radius: 20px;
+ margin-top: 15px;
+ background-color:rgb(229,43,80);
+ color:#fff;
+ font-size: 20px;
+ font-weight: 500;
+ cursor: pointer;
+ border: none;
+}
+footer{
+  position: absolute;
+  top: 0px;
+  font-size: 20px;
+  color: rgb(229,43,80);
+}
+#image-body{
+  width: 400px;
+  height: 400px;
+  border: 2px dashed #D2122E;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.container #image-body .hiddenclass{
+  display: none;
+}
+.container .crop-btn,.frame-btn,.rotate{
+  visibility:hidden;
+}
+.prev-container .lnk{
+  visibility: hidden;
+}
+/* .container .visibleclass{
+  visibility: visible;
+} */
+.frame{
+  margin: auto;
+  margin-top: 15px;
+}
+.frame i{
+  font-size: 50px;
+  color: red;
+}
+.frame .rectangle{
+  position:relative;
+  bottom: 16px;
+  font-size: 14px;
+  height: 55px;
+}
+.container .rotate{
+  margin: 5px;
+  background: none;
+  border: none;
+  cursor:pointer;
+}
+.container .rotate:hover{
+  background-color: white;
+  border-radius: 7px;
+}
+.container .rotate i{
+  font-size: 30px;
+}
+.prev-container .frame{
+  visibility: hidden;
+}
+.container .visibleclass{
+  visibility: visible;
+}
+.prev-container .lnk #link{
+  color:  white;
+  text-decoration: none;
+
+}
+
+.prev-container .visible,.lnk{
+  visibility: visible;
+}
+.prev-container .frames{
+  background: none;
+  border: none;
+  cursor:pointer;
+  border-radius: 7px;
+  background-color: white;
+}
+.prev-container .frames:hover{
+  background-color: #FF6292;
+}
+.prev-container a{
+  margin:auto;
+}
+@media only screen and (max-width:1380px){
+  body{
+    flex-direction: column;
+    margin: auto;
+  }
+  .container a{
+    margin:auto;
+  }
+}
+@media only screen and (max-width:573px){
+  body{
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+}
+.heart{
+  clip-path: path(var(--heart));
+}
